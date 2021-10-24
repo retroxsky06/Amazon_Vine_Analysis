@@ -10,7 +10,7 @@ The purpose of this project is to analyze Amazon customer reviews of the paid Am
 -	AWS RDS
 -	Pandas
 -	Dataset: The dataset derived from 
-[Amazon Review Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) list. The chosen dataset for this analysis is the [Book dataset] (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz!) (1 of 3).
+[Amazon Review Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) list. The chosen dataset for this analysis is the [Book dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz!) (1 of 3).
 
 ## Results
 
