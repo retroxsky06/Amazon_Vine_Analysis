@@ -17,40 +17,9 @@ The purpose of this project is to analyze Amazon customer reviews of the paid Am
 [Amazon Review Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) list. The chosen dataset for this analysis is the [Book dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz!) (1 of 3).
 
 ## Extract, Transform, Load (ETL)
-Using PySpark, the book dataset is extracted into four dataframes: customers_df, 
+Using PySpark, the book dataset is extracted into four dataframes: customers_df, products_df, review_id_df, and vine_df. Once connected to the AWS RDS instance, the four dataframes were then written into their respective tables in pgAdmin. The process can be found [here](.  The password and url that were used to configure the settings for RDS have been removed for security.
 
-Data Schema
-```
-CREATE TABLE review_id_table (
-  review_id TEXT PRIMARY KEY NOT NULL,
-  customer_id INTEGER,
-  product_id TEXT,
-  product_parent INTEGER,
-  review_date DATE -- this should be in the formate yyyy-mm-dd
-);
 
--- This table will contain only unique values
-CREATE TABLE products_table (
-  product_id TEXT PRIMARY KEY NOT NULL UNIQUE,
-  product_title TEXT
-);
-
--- Customer table for first data set
-CREATE TABLE customers_table (
-  customer_id INT PRIMARY KEY NOT NULL UNIQUE,
-  customer_count INT
-);
-
--- vine table
-CREATE TABLE vine_table (
-  review_id TEXT PRIMARY KEY,
-  star_rating INTEGER,
-  helpful_votes INTEGER,
-  total_votes INTEGER,
-  vine TEXT,
-  verified_purchase TEXT
-);
-```
 
 
 ## Results
