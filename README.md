@@ -17,10 +17,19 @@ The purpose of this project is to analyze Amazon customer reviews of the paid Am
 [Amazon Review Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) list. The chosen dataset for this analysis is the [Book dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz!) (1 of 3).
 
 ## Extract, Transform, Load (ETL)
-Using PySpark, the book dataset is extracted into four dataframes: customers_df, products_df, review_id_df, and vine_df. Once connected to the AWS RDS instance, the four dataframes were then written into their respective tables in pgAdmin. The process can be found [here](.  The password and url that were used to configure the settings for RDS have been removed for security.
+Using PySpark, the book dataset is extracted into four dataframes: customers_df, products_df, review_id_df, and vine_df. Once connected to the AWS RDS instance, the four dataframes were then written into their existing respective tables in pgAdmin. The ETL process can be found [here](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb). The password and url that were used to configure the settings for RDS have been removed for security.
 
+## Data Analysis with Pandas
+To determine if there is any bias toward favorable reviews from Vine members in the book dataset, Pandas is used to filter and create new dataframes.  This section of the analysis can be found [here](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb).  
 
+For the initial filter (filter #1), the vine_df is filtered to retrieve all rows where the total votes is equal or greather than 20.
 
+![fig1](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/images/filtered_df.png)
+
+A second filter (filter #2) is then used on the initial filter (filter #1) to create a new dataframe that retrieves all rows where
+the number of helpful votes divided by total votes is equal to or greater than 50%.
+
+![fig2](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/images/fifty_percent_helpful_df.png)
 
 ## Results
 
