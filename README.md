@@ -1,5 +1,4 @@
 # Amazon Vine Analysis
-Module 16 Challenge
 
 ## Project Overview
 The purpose of this project is to analyze Amazon customer reviews of the paid Amazon Vine program, which is a service that allows manufacturers and publishers to receive reviews for their products. Utilizing PySpark, the ETL process will extract the dataset, transform the data and connect to an AWS RDS instance.  The transformed data will then be loaded into pgAdmin.  Lastly, Pandas is used to determine if there is any bias towards favorable reviews from Vine members in the dataset.  
