@@ -47,3 +47,5 @@ Based on this analysis, there seems to be little to no positvity bias as there i
 #### Dataframe with no filters
 ![fig4](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/images/vine_df_paid.png)
 
+## Recommendations for further analysis
+From the Amazon Review Dataset, there were three book datasets while the majority  had one of its kind. As the dataset for this analysis did not have significant vine reviews, it may be helpful for future analysis to combine all three book datasets to better determine if there is any indication of positivity bias.
