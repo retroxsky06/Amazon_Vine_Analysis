@@ -26,9 +26,19 @@ the number of helpful votes divided by total votes is equal to or greater than 5
 
 ![fig2](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/images/fifty_percent_helpful_df.png)
 
+For the final stages of the analysis, the dataset was filtered to create two additional dataframes which would yield the following metrics for Amazon vine (paid) and non-vine (unpaid) reviews:
+- total number of reviews
+- total number of 5-star reviews
+- percentage of reviews that were 5-stars
 
 ![fig3](https://github.com/retroxsky06/Amazon_Vine_Analysis/blob/main/images/totals_reviews.png)
+
 ## Results
+The Book dataset provided the following results:
+- There are 0 Vine reviews.
+- There are 403,807 non-Vine reviews.
+  - 242,889 non-Vine reviews gave 5-stars.
+  - 60% of non-Vine reviews were 5-stars.
 
 - no vine paid
 -  all that weere filtered were not paid
