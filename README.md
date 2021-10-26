@@ -40,13 +40,7 @@ The Book dataset provided the following results:
   - 242,889 non-Vine reviews gave 5-stars.
   - 60% of non-Vine reviews were 5-stars.
 
-- no vine paid
--  all that weere filtered were not paid
-- This was a dataset that had 2 others.. need to examine the other 2 datasets to review if there were any other..
-- a dataset of 3 million and became fitlered to 40oK that are helpful reviews
-- 
 
 ## Summary
-
-
+Based on this analysis, there seems to be little to no positvity bias as there is 0 Vine (paid customers) reviews, while 60% of non-Vine (unpaid customers) reviews rated various books with 5-stars. It is surprising to discover that there were 0 Vine reviews in a dataset that initially began with approximately 3.1 million reviews; however, to ensure that the dataset was not solely holding non-Vine reviews, an additional dataframe was created on the vine_df.  It was discovered that there were 2 vine reviews; however, due to the filters during the analysis process, they were not displayed.  
 
